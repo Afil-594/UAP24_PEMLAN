@@ -22,11 +22,9 @@ public class AksiAdmin extends Aksi {
         System.exit(0);
     }
 
-        // Implementasi melihat list film
-
     @Override
     public void lihatListFilm() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         System.out.println("Daftar Film:");
         for (Film film : Film.getFilms().values()) {
             System.out.println(film.getName() + " - " + film.getDescription() + " - Harga: " + film.getPrice() + " - Stok: " + film.getStock());
@@ -34,7 +32,7 @@ public class AksiAdmin extends Aksi {
     }
 
     public void tambahFilm() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nama Film: ");
         String namaFilm = scanner.nextLine();
