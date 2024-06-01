@@ -26,7 +26,7 @@ public class AksiUser extends Aksi {
 
     @Override
     public void lihatListFilm() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         System.out.println("Daftar Film:");
         for (Film film : Film.getFilms().values()) {
             System.out.println(film.getName() + " - " + film.getDescription() + " - Harga: " + film.getPrice() + " - Stok: " + film.getStock());
@@ -34,13 +34,13 @@ public class AksiUser extends Aksi {
 }
 
     public void lihatSaldo() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         User currentUser = Akun.getCurrentUser();
             System.out.println("Saldo anda: " + currentUser.getSaldo());
     }
 
     public void pesanFilm() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nama Film yang ingin dipesan: ");
         String namaFilm = scanner.nextLine();
@@ -74,7 +74,7 @@ public class AksiUser extends Aksi {
     }
 
     public void lihatPesanan() {
-        // ini adalah tambahan kode yang diperlukan
+        //tambahan kode yang diperlukan
         User currentUser = Akun.getCurrentUser();
         Map<String, Pesanan> pesanan = currentUser.getPesanan();
     
